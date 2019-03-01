@@ -1,0 +1,5 @@
+SELECT COUNT(id) FROM dinos;
+SELECT * From dinos where period = 'Jurassic';
+SELECT sum(length) From dinos where period = 'Cretaceous';
+SELECT name From dinos where period in ('Jurassic' , 'Cretaceous') order by name;
+SELECT name From dinos where t_order = 'Saurischians' and diet = 'Herbivorous' order by name;
